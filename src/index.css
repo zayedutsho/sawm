@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400;400i;800&display=swap");
+
+.text-gradient-delight {
+  background: linear-gradient(90deg, #2092e5 64.39%, #c86e94 93.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-engage {
+  background: linear-gradient(90deg, #1e3a2b 32.42%, #f74e2d 59.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/font/centra-font-family-1716972749-0/CentraNo2-Thin-BF646c2691d7b27.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/font/centra-font-family-1716972749-0/CentraNo2-Extrabold-BF646c269067e76.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Centra No2 TRIAL";
+  src: url("./assets/font/centra-font-family-1716972749-0/CentraNo2-BoldItalic-BF646c269058bde.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+.font-centra-normal {
+  font-family: "Centra No2 TRIAL Normal", sans-serif;
+  font-weight: 300; /* normal weight */
+}
+.font-centra-extrabold {
+  font-family: "Centra No2 TRIAL", sans-serif;
+  font-weight: 800; /* Extra bold weight */
+}
+
+.font-centra-italic {
+  font-family: "Centra No2 TRIAL", sans-serif;
+  font-style: italic;
+}
+
+.font-dm-serif {
+  font-family: "DM Serif Display", serif;
+}
