@@ -4,10 +4,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "centra-extrabold": ['"Centra No2 TRIAL"', "sans-serif"],
+        "centra-extrabold": ['"Centra No2 TRIAL Bold"', "sans-serif"],
         "centra-italic": ['"Centra No2 TRIAL"', "sans-serif"],
         "dm-serif": ['"DM Serif Display"', "serif"],
         "centra-normal": ['"Centra No2 TRIAL Normal"', "sans-serif"],
+        "centra-italic-bold": ['"Centra No2 TRIAL Italic"', "sans-serif"],
       },
     },
   },

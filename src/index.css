@@ -23,19 +23,19 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "MyCustomFont";
-  src: url("./assets/font/centra-font-family-1716972749-0/CentraNo2-Extrabold-BF646c269067e76.ttf")
-    format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
+/* @font-face {
   font-family: "Centra No2 TRIAL";
   src: url("./assets/font/centra-font-family-1716972749-0/CentraNo2-BoldItalic-BF646c269058bde.ttf")
     format("truetype");
   font-weight: normal;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: "Centra No2 TRIAL Italic";
+  src: url("./assets/font/centra-font-family-1716972749-0/CentraNo2-ExtraboldItalic-BF646c269058d50.ttf")
+    format("truetype");
+  font-weight: 900;
   font-style: italic;
 }
 .font-centra-normal {
@@ -43,13 +43,20 @@
   font-weight: 300; /* normal weight */
 }
 .font-centra-extrabold {
-  font-family: "Centra No2 TRIAL", sans-serif;
+  font-family: "Centra No2 TRIAL Bold", sans-serif;
   font-weight: 800; /* Extra bold weight */
+  font-style: normal;
 }
 
-.font-centra-italic {
+/* .font-centra-italic {
   font-family: "Centra No2 TRIAL", sans-serif;
   font-style: italic;
+  font-weight: 800;
+} */
+.font-centra-italic-bold {
+  font-family: "Centra No2 TRIAL Italic ", sans-serif;
+  font-style: italic;
+  font-weight: 900;
 }
 
 .font-dm-serif {
