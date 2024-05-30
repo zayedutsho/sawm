@@ -26,13 +26,12 @@ const Footer = () => {
             We're on a mission to elevate businesses through designs
           </h2>
         </div>
-
-        <div className="flex flex-col  md:gap-[24px] sm:flex-row    ">
-          <button className="border rounded-full px-8 py-4 bg-[#BFFF4F] font-centra-extrabold">
-            View Proposal
+        <div className="flex flex-col  md:gap-[24px] sm:flex-row  overflow-hidden   ">
+          <button className=" button-hover-effect font-centra-extrabold text-[20px] px-[56px] py-[27px] border-black rounded-full relative  overflow-hidden bg-[#BFFF4F]  text-black  transition-all before:absolute before:left-0 before:bottom-0 before:right-0 before:h-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:h-full">
+            <span className="relative z-10">View Proposal</span>
           </button>
-          <button className="border-2 border-black rounded-full px-8 py-4 font-centra-extrabold md:mt-0 mt-5">
-            Book a Call
+          <button className=" md:mt-0 mt-5 button-hover-effect border font-centra-extrabold border-black text-[20px]  rounded-full relative  overflow-hidden  px-[56px] py-[27px] text-black transition-all before:absolute before:left-0 before:bottom-0 before:right-0 before:h-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:h-full">
+            <span className="relative z-10">Book a call</span>
           </button>
         </div>
 

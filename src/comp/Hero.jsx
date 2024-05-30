@@ -29,12 +29,12 @@ const Hero = () => {
         </h2>
       </div>
 
-      <div className="flex flex-col  md:gap-[24px] sm:flex-row    ">
-        <button className="button-hover-effect border rounded-full px-8 py-4 bg-[#BFFF4F] font-centra-extrabold relative h-[50px] w-40 overflow-hidden text-black shadow-2xl transition-all">
+      <div className="flex flex-col  md:gap-[24px] sm:flex-row  overflow-hidden   ">
+        <button className=" button-hover-effect font-centra-extrabold text-[20px] px-[56px] py-[28px] border-black rounded-full relative  overflow-hidden bg-[#BFFF4F]  text-black  transition-all before:absolute before:left-0 before:bottom-0 before:right-0 before:h-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:h-full">
           <span className="relative z-10">View Proposal</span>
         </button>
-        <button className="border-2 border-black rounded-full px-8 py-4 font-centra-extrabold md:mt-0 mt-5">
-          Book a Call
+        <button className=" md:mt-0 mt-5 button-hover-effect border font-centra-extrabold border-black text-[20px]  rounded-full relative  overflow-hidden  px-[56px] py-[28px] text-black transition-all before:absolute before:left-0 before:bottom-0 before:right-0 before:h-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:h-full">
+          <span className="relative z-10">Book a call</span>
         </button>
       </div>
 
@@ -60,9 +60,6 @@ const Hero = () => {
           className="border bottom-1 border-black  rounded-full  p-3"
         />
       </div>
-      <button className="border-2 border-black rounded-full text-red-500 relative h-[50px] w-40 overflow-hidden border border-red-500 bg-white px-3 text-red-500 shadow-2xl transition-all before:absolute before:left-0 before:bottom-0 before:right-0 before:h-0 before:bg-red-500 before:transition-all before:duration-500 hover:text-white hover:before:h-full">
-        <span className="relative z-10">Swipe</span>
-      </button>
     </div>
   );
 };
