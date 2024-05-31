@@ -62,3 +62,7 @@
 .font-dm-serif {
   font-family: "DM Serif Display", serif;
 }
+
+.slick-slide > div {
+  margin: 0 10px;
+}
