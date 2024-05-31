@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className="flex flex-col justify-center items-center mt-[80px] md:mt-[150px] overflow-hidden ">
       <div>
-        <h2 className="font-centra-extrabold text-[36px] tracking-wider	 leading-[41px]  md:font-centra-extrabold md:text-[92px] md:leading-[105px] text-[#1E3A2B]">
+        <h2 className="font-centra-extrabold text-[36px] tracking-wider	   md:font-centra-extrabold md:text-[92px] md:leading-[105px] text-[#1E3A2B]">
           Our
           <span className=" font-dm-serif italic ">Awesome</span>
           services
