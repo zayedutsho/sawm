@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
@@ -63,12 +62,12 @@ const Client = () => {
         Say
       </h2>
 
-      <div className="w-full max-w-6xl px-4">
+      <div className="w-3/4 mx-auto">
         <Slider {...settings}>
           {cards.map((d, index) => (
             <div
               key={index}
-              className="bg-[#264836] rounded-lg text-left mx-auto border-0 px-8 py-6 md:w-[540px] md:h-[347px]"
+              className="bg-[#264836] rounded-lg text-left mx-auto border-0 px-[50px] md:w-[540px] md:h-[347px]"
             >
               <img src={d.img} alt="" className="w-16 h-16 mx-auto mb-4" />
               <p className="font-centra-normal text-white text-[20px] mt-6 md:mt-10">
