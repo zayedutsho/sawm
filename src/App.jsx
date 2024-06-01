@@ -1,5 +1,6 @@
 import "./App.css";
 import Client from "./comp/Client";
+import Design from "./comp/Design";
 import Footer from "./comp/Footer";
 import Hero from "./comp/Hero";
 import HeroTwo from "./comp/HeroTwo";
@@ -14,6 +15,7 @@ function App() {
       <HeroTwo />
       <Services />
       <Client />
+      <Design />
       <Footer />
     </>
   );
