@@ -1,24 +1,39 @@
 import sass from "../assets/services/sass.svg";
 import webApp from "../assets/services/webApp.svg";
 import webDev from "../assets/services/webDev.svg";
+import line from "../assets/services/line.svg";
+import mobileLine from "../assets/services/mobileLine.svg";
+
 const Services = () => {
   return (
-    <div className="flex flex-col justify-center items-center mt-[80px] md:mt-[150px] overflow-hidden ">
+    <div className="px-[15px] md:px-[0px] flex flex-col justify-center items-center mt-[80px] mb-[80px] md:mb-[158px] md:mt-[150px] overflow-hidden">
       <div>
-        <h2 className="font-centra-extrabold text-[36px] tracking-wider	   md:font-centra-extrabold md:text-[92px] md:leading-[105px] text-[#1E3A2B]">
+        <h2 className="relative text-center font-centra-extrabold text-[36px] tracking-wider	md:font-centra-extrabold md:text-[92px] md:leading-[105px] text-[#1E3A2B]">
           Our
-          <span className=" font-dm-serif italic ">Awesome</span>
-          services
+          <span className="font-dm-serif italic">
+            <span> </span>Awesome <span> </span>
+          </span>
+          <img
+            src={line}
+            alt="line"
+            className="hidden md:block absolute md:left-[250px] md:bottom-[4px] z-[-1]"
+          />
+          <img
+            src={mobileLine}
+            alt="line"
+            className="md:hidden absolute left-[140px] bottom-[55px] z-[-1]"
+          />
+          Services
         </h2>
       </div>
 
-      <div className="md:grid grid-cols-3 gap-[229px] mt-[20px] md:mt-[123px]">
-        <div className="  flex flex-col justify-center items-center">
+      <div className="md:grid grid-cols-3 md:gap-[50px] 2xl:gap-[229px] mt-[20px] md:mt-[123px]">
+        <div className=" flex flex-col justify-center items-center">
           <img
             src={webApp}
             alt=""
             style={{ display: "block" }}
-            className=" mt-0 md:mt-[40px]"
+            className="mb-[10px] md:mb-[33px]"
           />
           <h1
             style={{ display: "block" }}
@@ -28,7 +43,7 @@ const Services = () => {
           </h1>
           <p
             style={{ display: "block" }}
-            className="font-centra-normal text-[16px]  mt-0 md:text-[24px] text-center mb-[40px]"
+            className="font-centra-normal text-[16px] md:text-[24px] text-center mt-[10px] md:mt-[32px]"
           >
             Fresh new designs delivered <br /> every 2-3 business days, <br />
             Monday - Friday.
@@ -39,7 +54,7 @@ const Services = () => {
             src={sass}
             alt=""
             style={{ display: "block" }}
-            className=" mt-0 md:mt-[40px]"
+            className="mt-[40px] md:mt-[0px] mb-[10px] md:mb-[33px]"
           />
           <h1
             style={{ display: "block" }}
@@ -49,14 +64,19 @@ const Services = () => {
           </h1>
           <p
             style={{ display: "block" }}
-            className="font-centra-normal text-[16px]  mt-0 md:text-[24px] text-center mb-[40px]"
+            className="font-centra-normal text-[16px] md:text-[24px] text-center mt-[10px] md:mt-[32px]"
           >
             Fresh new designs delivered <br /> every 2-3 business days, <br />
             Monday - Friday.
           </p>
         </div>
         <div className="  flex flex-col justify-center items-center">
-          <img src={webDev} alt="" style={{ display: "block" }} />
+          <img
+            src={webDev}
+            alt=""
+            style={{ display: "block" }}
+            className="mt-[40px] md:mt-[0px] mb-[10px] md:mb-[33px]"
+          />
           <h1
             style={{ display: "block" }}
             className="font-centra-extrabold text-[20px] md:text-[38px]"
@@ -65,17 +85,18 @@ const Services = () => {
           </h1>
           <p
             style={{ display: "block" }}
-            className="font-centra-normal text-[16px]  mt-0 md:text-[24px] text-center mb-[40px]"
+            className="font-centra-normal text-[16px] md:text-[24px] text-center mt-[10px] md:mt-[32px]"
           >
             Fresh new designs delivered <br /> every 2-3 business days, <br />
             Monday - Friday.
           </p>
         </div>
       </div>
-
-      <button className="  mt-[96px] button-hover-effect border font-centra-extrabold border-black text-[20px]  rounded-full relative  overflow-hidden  px-[56px] py-[27px] text-black transition-all before:absolute before:left-0 before:bottom-0 before:right-0 before:h-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:h-full">
-        <span className="relative z-10">Book a call</span>
-      </button>
+      <div className="flex gap-[16px] mt-[50px] md:mt-[104px] md:gap-[24px] sm:flex-row overflow-hidden">
+        <button className="font-centra-extrabold text-[20px] w-[168px] md:w-[248px] h-[61px] md:h-[80px] btn btn2 border border-[#1E3A2B] bg-none text-lg font-montserrat text-black cursor-pointer transition duration-800 relative overflow-hidden rounded-full">
+          Book a Call
+        </button>
+      </div>
     </div>
   );
 };

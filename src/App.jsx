@@ -11,8 +11,6 @@ function App() {
   return (
     <>
       <Hero />
-
-      {/* <Servic></Servic> */}
       <HeroTwo />
       <Services />
       <Client />
