@@ -18,9 +18,9 @@ const Faqs = () => {
     },
   ];
   return (
-    <div className="  w-full flex flex-col justify-center items-center">
-      <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
-      <div>
+    <div className="  bg-[#1E3A2B] min-h-screen flex items-center justify-center">
+      <div className=" w-[1644px] mx-auto p-4 bg-[#264836]">
+        <h2 className="text-2xl font-bold mb-4 text-center text-white">FAQs</h2>
         {faqData.map((item, index) => (
           <Accordion
             key={index}

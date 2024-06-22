@@ -36,6 +36,9 @@ const Hero = () => {
         <button className=" md:mt-0 mt-5 button-hover-effect border font-centra-extrabold border-black text-[20px]  rounded-full relative  overflow-hidden  px-[56px] py-[28px] text-black transition-all before:absolute before:left-0 before:bottom-0 before:right-0 before:h-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:h-full">
           <span className="relative z-10">Book a call</span>
         </button>
+        <button className=" md:mt-0 mt-5  font-centra-extrabold text-[20px] px-[56px] py-[28px] btn btn2 border border-black bg-none  text-lg font-montserrat text-black cursor-pointer m-2 transition duration-800 relative overflow-hidden rounded-full">
+          Hover Me
+        </button>
       </div>
 
       <div className=" flex flex-row justify-between align-middle gap-[20px] mt-[64px]">
