@@ -6,28 +6,31 @@ import mobileLine from "../assets/services/mobileLine.svg";
 
 const Services = () => {
   return (
-    <div className="px-[15px] md:px-[0px] flex flex-col justify-center items-center mt-[80px] mb-[80px] md:mb-[158px] md:mt-[150px] overflow-hidden">
+    <div className="px-[15px] md:px-[0px] flex flex-col justify-center items-center mt-[80px] mb-[80px] 2xl:mb-[158px] 2xl:mt-[150px] overflow-hidden">
       <div>
-        <h2 className="relative text-center font-centra-extrabold text-[36px] tracking-wider	md:font-centra-extrabold md:text-[92px] md:leading-[105px] text-[#1E3A2B]">
+        <h2 className="relative text-center font-centra-extrabold text-[36px] tracking-wider	md:font-centra-extrabold md:text-[68px] md:leading-[105px] text-[#1E3A2B]">
           Our
-          <span className="font-dm-serif italic">
-            <span> </span>Awesome <span> </span>
+          <span className="font-DM">
+            <span> </span>Awesome{" "}
+            <span>
+              {" "}
+              <img
+                src={mobileLine}
+                alt="line"
+                className="block md:hidden absolute left-[150px] bottom-[50px]"
+              />
+              <img
+                src={line}
+                alt="line"
+                className="hidden md:block absolute md:left-[160px] md:bottom-[4px]"
+              />
+            </span>
           </span>
-          <img
-            src={line}
-            alt="line"
-            className="hidden md:block absolute md:left-[250px] md:bottom-[4px] z-[-1]"
-          />
-          <img
-            src={mobileLine}
-            alt="line"
-            className="md:hidden absolute left-[140px] bottom-[55px] z-[-1]"
-          />
           Services
         </h2>
       </div>
 
-      <div className="md:grid grid-cols-3 md:gap-[50px] 2xl:gap-[229px] mt-[20px] md:mt-[123px]">
+      <div className="md:grid grid-cols-3 md:gap-[50px] 2xl:gap-[229px] mt-[20px] md:mt-[100px] 2xl:mt-[123px]">
         <div className=" flex flex-col justify-center items-center">
           <img
             src={webApp}

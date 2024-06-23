@@ -14,10 +14,10 @@ const Design = () => {
     { id: 6, imageUrl: one, title: "Work 6" },
   ];
   return (
-    <div className="px-[25px] md:px-[0px] flex flex-col justify-center items-center bg-white my-[80px] md:mt-[150px] md:mb-[170px] overflow-hidden">
+    <div className="px-[25px] md:px-[35px] 2xl:px-[0px] flex flex-col justify-center items-center bg-white my-[80px] 2xl:mt-[150px] 2xl:mb-[170px] overflow-hidden">
       <h2 className="z-[100] relative font-centra-extrabold text-[36px] tracking-wider text-[#1E3A2B] md:text-[68px] md:leading-[105px] md:mb-8 text-center leading-[-1.36px]">
         Our
-        <span className="font-dm-serif italic text-[#1E3A2B] mb-[91px]">
+        <span className="font-DM text-[#1E3A2B] mb-[91px]">
           <span></span> Design <span></span>
         </span>
         <img

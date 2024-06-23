@@ -1,6 +1,7 @@
-import Accordion from "./Accordion";
-import line from "../assets/faq/line.svg";
+import title from "../assets/faq/title.svg";
+import titleMobile from "../assets/faq/titleMobile.svg";
 import arrow from "../assets/faq/arrow.svg";
+import arrowUp from "../assets/faq/arrowUp.svg";
 import { useState } from "react";
 
 const faqData = [
@@ -29,9 +30,16 @@ const Faqs = () => {
 
   return (
     <div className="bg-[#1E3A2B]">
-      <h2 className="z-[100] relative text-[36px] md:text-[68px] font-bold text-center text-white pt-[60px] md:pt-[112px] mb-[40px] md:mb-[122px]">
+      {/* <h2 className="z-[100] relative text-[36px] md:text-[68px] font-bold text-center text-white pt-[60px] md:pt-[112px] mb-[40px] md:mb-[122px]">
         FAQs
-      </h2>
+      </h2> */}
+      <div className="hidden md:flex items-center justify-center pt-[60px] 2xl:pt-[112px] mb-[40px] 2xl:mb-[122px]">
+        <img src={title} alt="" />
+      </div>
+
+      <div className="flex items-center justify-center md:hidden pt-[60px] md:pt-[112px] mb-[40px] md:mb-[122px]">
+        <img src={titleMobile} alt="" />
+      </div>
 
       <div className="flex flex-col gap-[8px] w-[90%] md:w-[80%] mx-auto">
         {faqData.map((item, index) => (
@@ -40,15 +48,21 @@ const Faqs = () => {
             onClick={() => handleClick(index)}
           >
             <div className="flex items-center justify-between p-[18px] md:px-[40px] md:pt-[40px] md:pb-[40px]">
-              <h1 className="text-[16px] md:text-[40px] text-white italic">{item.question}</h1>
-              {open ? (
-                <img src={arrow} alt="arrow" className="w-[13px] md:w-[44px] h-[6px] md:h-[21px]"/>
+              <h1 className="text-[16px] md:text-[40px] text-white italic">
+                {item.question}
+              </h1>
+              {openIndex === index ? (
+                <img
+                  src={arrowUp}
+                  alt="arrow"
+                  className="w-[13px] md:w-[44px] h-[6px] md:h-[21px]"
+                />
               ) : (
-                <img src={arrow} alt="arrow" />
+                <img src={arrow} alt="arrow" className="w-[13px] md:w-[44px] h-[6px] md:h-[21px]"/>
               )}
             </div>
             {openIndex === index && (
-              <div className="px-[18px] pb-[18px] md:px-[40px] md:pb-[40px] text-white">
+              <div className="font-DM text-[14px] md:text-[20px] px-[18px] pb-[18px] md:px-[40px] md:pb-[40px] text-white">
                 - {item.answer}
               </div>
             )}
@@ -56,7 +70,7 @@ const Faqs = () => {
         ))}
       </div>
 
-      <div className="flex items-center justify-center gap-[16px] md:gap-[24px] sm:flex-row overflow-hidden mt-[40px] md:mt-[182px] pb-[45px] md:pb-[122px]">
+      <div className="flex items-center justify-center gap-[16px] md:gap-[24px] sm:flex-row overflow-hidden mt-[40px] md:mt-[100px] 2xl:mt-[182px] pb-[45px] md:pb-[100px] 2xl:pb-[122px]">
         <button className="font-centra-extrabold text-[20px] w-[168px] md:w-[248px] h-[61px] md:h-[80px] hover:border-black btn btn23 text-lg font-montserrat text-black cursor-pointer transition duration-800 relative overflow-hidden rounded-full">
           View Proposal
         </button>

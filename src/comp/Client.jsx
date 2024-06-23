@@ -2,6 +2,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "../index.css";
+import lineMobile from "../assets/cmLine.svg";
+import line from "../assets/cLine.svg";
 
 import star from "../assets/star.svg";
 
@@ -55,21 +57,34 @@ const Client = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center bg-[#1E3A2B] overflow-hidden pt-[60px] md:pt-[112px] pb-[51px] md:pb-[118px]">
-      <h2 className="font-centra-extrabold text-[36px] tracking-wider text-[#fff] md:text-[68px] md:leading-[105px] mb-8 text-center">
+    <div className=" flex flex-col justify-center items-center bg-[#1E3A2B] overflow-hidden pt-[60px] 2xl:pt-[112px] pb-[51px] md:pb-[100px] 2xl:pb-[118px]">
+      <h2 className="px-[20px] md:px-[0px] font-centra-extrabold text-[36px] tracking-wider text-[#fff] md:text-[68px] md:leading-[105px] mb-8 text-center">
         What Our
-        <span className="font-dm-serif italic text-[#BFFF4F]">
-          <span> </span>Clients <span> </span>
+        <span className="relative font-DM text-[#BFFF4F]">
+          <span> </span>Clients{" "}
+          <span>
+            {" "}
+            <img
+              src={lineMobile}
+              alt="line"
+              className="block md:hidden absolute left-[20px] bottom-[-3px]"
+            />
+            <img
+              src={line}
+              alt="line"
+              className="hidden md:block absolute left-[23px] bottom-[2px]"
+            />
+          </span>
         </span>
         Say
       </h2>
 
-      <div className="w-3/4 mx-auto mt-[40px] md:mt-[91px]">
+      <div className="w-3/4 mx-auto mt-[40px] 2xl:mt-[91px]">
         <Slider {...settings}>
           {cards.map((d, index) => (
             <div
               key={index}
-              className="bg-[#264836] rounded-lg text-left mx-auto border-0 px-[38px] md:px-[60px] md:h-[347px]"
+              className="bg-[#264836] rounded-lg text-left mx-auto border-0 px-[38px] md:px-[60px] md:h-[420px] 2xl:h-[347px]"
             >
               <img
                 src={d.img}

@@ -3,7 +3,7 @@ import dribble from "../assets/icon/dribble.svg";
 import instagram from "../assets/icon/instagram.svg";
 import linkedin from "../assets/icon/link.svg";
 import logo from "../assets/logo.svg";
-import line from "../assets/footerLine.svg";
+import line from "../assets/hLine.svg";
 import "../index.css";
 
 const Hero = () => {
@@ -13,22 +13,18 @@ const Hero = () => {
         <img src={logo} alt="" />
       </section>
       <div className="text-center">
-        <h2 className="relative font-centra-extrabold text-[36px] leading-[41px]  md:font-centra-extrabold md:text-[92px] md:leading-[105px] text-[#1E3A2B]">
+        <h2 className="relative  font-bold text-[36px] leading-[41px] md:text-[92px] md:leading-[105px] text-[#1E3A2B]">
           We design to{" "}
-          <span className="text-gradient-delight font-dm-serif italic ">
+          <span className="text-gradient-delight font-DM">
             Delight
             <img
               src={line}
               alt="line"
-              className="w-[202px] hidden md:block absolute md:left-[650px] md:bottom-[80px] z-[-1]"
+              className="hidden md:block absolute md:left-[570px] md:bottom-[95px] z-[-1]"
             />
           </span>
           <br />
-          and{" "}
-          <span className="text-gradient-engage  font-dm-serif italic">
-            Engage
-          </span>{" "}
-          users
+          and <span className="text-gradient-engage font-DM">Engage </span> users
         </h2>
         <h2 className="font-centra-normal text-[#52685C] mt-[20px] md:mt-[56px] mb-[40px] text-[20px]">
           We're on a mission to elevate businesses through designs

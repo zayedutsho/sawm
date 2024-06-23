@@ -14,17 +14,12 @@ const Footer = () => {
             Sawm
           </h1>
         </section> */}
-        <div className="text-center mt-[80px] md:mt-[168px]">
+        <div className="text-center mt-[80px] 2xl:mt-[168px]">
           <h2 className="relative font-centra-extrabold text-[36px] leading-[41px]  md:font-centra-extrabold md:text-[92px] md:leading-[105px] text-[#1E3A2B]">
             Ready to build <br />
             something{" "}
-            <span className="text-gradient-delight font-dm-serif italic">
+            <span className="text-gradient-delight font-DM">
               Exeptoinal?
-              {/* <img
-                src={lineMobile}
-                alt="line"
-                className="block md:hidden absolute z-[-1]"
-              /> */}
               <img
                 src={line}
                 alt="line"
@@ -43,7 +38,7 @@ const Footer = () => {
           </button>
         </div>
 
-        <div className="flex flex-row justify-between align-middle gap-[20px] mt-[20px] md:mt-[64px] mb-[60px] md:mb-[137px]">
+        <div className="flex flex-row justify-between align-middle gap-[20px] mt-[20px] md:mt-[64px] mb-[60px] 2xl:mb-[137px]">
           <img
             src={instagram}
             alt=""

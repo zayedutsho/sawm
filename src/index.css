@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400;400i;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap");
 
 .text-gradient-delight {
   background: linear-gradient(90deg, #2092e5 64.39%, #c86e94 93.88%);
@@ -15,11 +15,25 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 @font-face {
   font-family: "MyCustomFont";
   src: url("./assets/font/centra-font-family-1716972749-0/CentraNo2-Thin-BF646c2691d7b27.ttf")
     format("truetype");
   font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fontBold";
+  src: url("./assets/font/CentraNo2-Bold-BF646c26907bd1a.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Centra No2 Trial";
+  src: url("./assets/font/centra-font-family-1716972749-0/") format("woff2"),
+    url("/path/to/fonts/CentraNo2Trial-Bold.woff") format("woff");
+  font-weight: 800;
   font-style: normal;
 }
 
