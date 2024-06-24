@@ -19,7 +19,7 @@ const Footer = () => {
             Ready to build <br />
             something{" "}
             <span className="text-gradient-delight font-DM">
-              Exeptoinal?
+              Exceptional?
               <img
                 src={line}
                 alt="line"
