@@ -1,10 +1,16 @@
+import { motion } from "framer-motion";
+import line from "../assets/services/line.svg";
+import mobileLine from "../assets/services/mobileLine.svg";
 import sass from "../assets/services/sass.svg";
 import webApp from "../assets/services/webApp.svg";
 import webDev from "../assets/services/webDev.svg";
-import line from "../assets/services/line.svg";
-import mobileLine from "../assets/services/mobileLine.svg";
 
 const Services = () => {
+  const textRevealVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="px-[15px] md:px-[0px] flex flex-col justify-center items-center mt-[80px] mb-[80px] 2xl:mb-[158px] 2xl:mt-[150px] overflow-hidden">
       <div>
@@ -31,19 +37,24 @@ const Services = () => {
       </div>
 
       <div className="md:grid grid-cols-3 md:gap-[50px] 2xl:gap-[229px] mt-[20px] md:mt-[100px] 2xl:mt-[123px]">
-        <div className=" flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
           <img
             src={webApp}
             alt=""
             style={{ display: "block" }}
             className="mb-[10px] md:mb-[33px]"
           />
-          <h1
+          <motion.h1
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            variants={textRevealVariants}
             style={{ display: "block" }}
             className="font-centra-extrabold text-[20px] md:text-[38px]"
           >
             Web & App Design
-          </h1>
+          </motion.h1>
           <p
             style={{ display: "block" }}
             className="font-centra-normal text-[16px] md:text-[24px] text-center mt-[10px] md:mt-[32px]"
@@ -52,19 +63,24 @@ const Services = () => {
             Monday - Friday.
           </p>
         </div>
-        <div className="  flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
           <img
             src={sass}
             alt=""
             style={{ display: "block" }}
             className="mt-[40px] md:mt-[0px] mb-[10px] md:mb-[33px]"
           />
-          <h1
+          <motion.h1
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            variants={textRevealVariants}
             style={{ display: "block" }}
             className="font-centra-extrabold text-[20px] md:text-[38px]"
           >
             SaaS Design
-          </h1>
+          </motion.h1>
           <p
             style={{ display: "block" }}
             className="font-centra-normal text-[16px] md:text-[24px] text-center mt-[10px] md:mt-[32px]"
@@ -73,19 +89,24 @@ const Services = () => {
             Monday - Friday.
           </p>
         </div>
-        <div className="  flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
           <img
             src={webDev}
             alt=""
             style={{ display: "block" }}
             className="mt-[40px] md:mt-[0px] mb-[10px] md:mb-[33px]"
           />
-          <h1
+          <motion.h1
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            variants={textRevealVariants}
             style={{ display: "block" }}
             className="font-centra-extrabold text-[20px] md:text-[38px]"
           >
             Web Development
-          </h1>
+          </motion.h1>
           <p
             style={{ display: "block" }}
             className="font-centra-normal text-[16px] md:text-[24px] text-center mt-[10px] md:mt-[32px]"

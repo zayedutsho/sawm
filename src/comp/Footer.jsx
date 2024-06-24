@@ -1,10 +1,15 @@
+import { motion } from "framer-motion";
+import line from "../assets/footerLine.svg";
 import behance from "../assets/icon/behance.svg";
 import dribble from "../assets/icon/dribble.svg";
 import instagram from "../assets/icon/instagram.svg";
 import linkedin from "../assets/icon/link.svg";
-import line from "../assets/footerLine.svg";
 
 const Footer = () => {
+  const textRevealVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <>
       <div className="px-[25px] md:px-[0px] flex flex-col justify-center items-center">
@@ -15,7 +20,15 @@ const Footer = () => {
           </h1>
         </section> */}
         <div className="text-center mt-[80px] 2xl:mt-[168px]">
-          <h2 className="relative font-centra-extrabold text-[36px] leading-[41px]  md:font-centra-extrabold md:text-[92px] md:leading-[105px] text-[#1E3A2B]">
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            variants={textRevealVariants}
+            style={{ display: "block" }}
+            className="relative font-centra-extrabold text-[36px] leading-[41px]  md:font-centra-extrabold md:text-[92px] md:leading-[105px] text-[#1E3A2B]"
+          >
             Ready to build <br />
             something{" "}
             <span className="text-gradient-delight font-DM">
@@ -26,7 +39,7 @@ const Footer = () => {
                 className="hidden left-[550px] bottom-[-10px] md:block absolute z-[-1]"
               />
             </span>
-          </h2>
+          </motion.h2>
 
           <h2 className="font-centra-normal text-[#52685C] mt-[20px] md:mt-[56px] mb-[40px] text-[16px] md:text-[20px]">
             We're on a mission to elevate businesses through designs
