@@ -23,7 +23,7 @@ const Footer = () => {
               <img
                 src={line}
                 alt="line"
-                className="hidden left-[500px] bottom-[-10px] md:block absolute z-[-1]"
+                className="hidden left-[550px] bottom-[-10px] md:block absolute z-[-1]"
               />
             </span>
           </h2>
