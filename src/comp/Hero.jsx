@@ -9,7 +9,15 @@ import "../index.css";
 
 const textRevealVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      delay: 0.2,
+      ease: "easeInOut", // Custom cubic-bezier for smoother easing
+    },
+  },
 };
 
 const Hero = () => {
@@ -23,7 +31,7 @@ const Hero = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          // transition={{ duration: 3, ease: "easeOut" }}
           variants={textRevealVariants}
           className="relative font-bold text-[36px] leading-[41px] md:text-[92px] md:leading-[105px] text-[#1E3A2B]"
         >
@@ -40,16 +48,9 @@ const Hero = () => {
           and <span className="text-gradient-engage font-DM">Engage </span>{" "}
           users
         </motion.h2>
-        <motion.h2
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          variants={textRevealVariants}
-          className="font-centra-normal text-[#52685C] mt-[20px] md:mt-[56px] mb-[40px] text-[20px]"
-        >
+        <h2 className="font-centra-normal text-[#52685C] mt-[20px] md:mt-[56px] mb-[40px] text-[20px]">
           We're on a mission to elevate businesses through designs
-        </motion.h2>
+        </h2>
       </div>
 
       <div className="flex gap-[16px] md:gap-[24px] sm:flex-row overflow-hidden">
